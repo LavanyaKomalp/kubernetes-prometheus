@@ -4,16 +4,16 @@ metadata:
   name: prometheus-deployment
   namespace: monitoring
   labels:
-    app: prometheus-server
+    app: springboot-app-7b597d5547-xgcxr 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prometheus-server
+      app: springboot-app-7b597d5547-xgcxr 
   template:
     metadata:
       labels:
-        app: prometheus-server
+        app: springboot-app-7b597d5547-xgcxr 
     spec:
       containers:
         - name: prometheus
