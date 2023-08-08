@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: prometheus-service
+  name: springboot-app-7b597d5547-xgcxr 
   namespace: monitoring
   annotations:
       prometheus.io/scrape: 'true'
@@ -9,7 +9,7 @@ metadata:
   
 spec:
   selector: 
-    app: prometheus-server
+    app: springboot-app-7b597d5547-xgcxr 
   type: NodePort  
   ports:
     - port: 8080
